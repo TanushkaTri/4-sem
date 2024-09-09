@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+     
+
+    <title>Заполните форму</title>
+</head>
+<body>
+    <div class="form-container">
+        <form id="myForm"> 
+        <h2>Заполните форму</h2>
+
+        <div class="form-group">
+            <label>Фамилия:</label>
+            <div class="input-wrapper">
+                <input type="text" name="lastName">
+                <div class="error-message" id="lastNameError"></div>
+            </div>
+           
+        </div>
+
+        <div class="form-group">
+            <label>Имя:</label>
+            <div class="input-wrapper">
+                <input type="text" name="firstName">
+                <div class="error-message" id="firstNameError"></div>
+            </div>
+            
+        </div>
+
+        <div class="form-group">
+            <label>E-mail:</label>
+            <div class="input-wrapper">
+                <input type="email" name="email">
+                <div class="error-message" id="emailError"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Телефон: (0xx)xxx-xx-xx</label>
+            
+            <div class="input-wrapper">
+                <input type="tel" placeholder="(0xx)xxx-xx-xx" type="tel" name="tel">
+                <div class="error-message" id="phoneError"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Город:</label>
+            
+            <select class="city-error">
+                <option value="city1">Минск</option>
+                <option value="city2">Гомель</option>
+                <option value="city3">Брест</option>
+                <option value="city4">Могилев</option>
+                <option value="city5">Витебск</option>
+            </select>
+           
+        </div>
+
+        <div class="form-group">
+            <label>Я учусь в БГТУ:</label>
+            <input type="checkbox" class="chec">
+        </div>
+
+        <div class="form-group">
+            <label>На каком курсе учитесь:</label>
+            <input type="radio" id="course1" class="cou" name="course"><label for="course1" class="couc">1</label>
+            <input type="radio" id="course2" class="cou" name="course"><label for="course2" class="couc">2</label>
+            <input type="radio" id="course3" class="cou" name="course"><label for="course3" class="couc">3</label>
+            <input type="radio" id="course4" class="cou" name="course"><label for="course4" class="couc">4</label>
+        </div>
+        
+
+        <div class="form-group">
+            <label>Расскажите о себе:</label>
+            <div class="input-wrapper">
+                 <textarea rows="4"></textarea>
+                <div class="error-message" id="aboutMeError"></div>
+            </div>
+            
+        </div>
+
+        <div class="form-group">
+            <button id="submitButton">Проверить</button>
+        </div>
+    </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

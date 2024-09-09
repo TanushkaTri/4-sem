@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+
+    "target": "es2016",                                
+    "removeComments": true,
+    "outFile": "Lab_3.js"
+},
+"files":[
+    "Lab_3.ts"
+]
+
+}

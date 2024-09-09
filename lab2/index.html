@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return save()">
+        <div>
+            <label for="heightС">Высота наперстка</label>
+            <input type="number" name="heightС" id = "heightС">
+        </div>
+        <div>
+            <label for="widthС">Ширина наперстка</label>
+            <input type="number" name="widthС" id = "widthС">
+        </div>
+        <div>
+            <label for="diameter">Диаметр шарика</label>
+            <input type="number" name="diameter" id = "diameter">
+        </div>
+        <input type="submit" id="submit" name="submitbatt" value="Сохранить">
+    </form>
+    
+    <div id="game" style="text-align: center;">
+        <div class="cap-container">
+            <div class="cap"><img src="glass.png" alt=""><div id="ball"></div></div>
+            <div class="cap"><img src="glass.png" alt=""></div>
+            <div class="cap"><img src="glass.png" alt=""></div>
+        </div>
+    </div>
+
+    <div class="info" style="text-align: center; margin-top: 30px;">
+       
+        <div class="resultTable" >
+            <p id="correct">Верно</p>
+            <p id="incorrect">Неверно</p>
+        </div>
+
+        <div class="Table" style=" margin-top: 50px;">
+            <label for="result">Результат</label>
+            <input type="text" name="result" id="result">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
